@@ -1,0 +1,18 @@
+ // @author Daniel Eloy
+package Hora;
+
+import java.text.SimpleDateFormat; 
+import java.util.Date;
+
+public class HoraDaSistema {
+
+	public static void main (String[] args)  {
+		
+		String hora = new SimpleDateFormat("HH:mm:ss").format(new Date());
+		String data = new SimpleDateFormat("dd/MM/yyyy").format(new Date());
+		
+		System.out.println("Formato original: ".concat(new Date().toString())
+				.concat("\nHora do sistema: ".concat(hora.toString())
+						.concat("\nData: ".concat(data.toString()))));
+	}
+}
